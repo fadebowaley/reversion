@@ -2,13 +2,18 @@ import React, { Fragment, useState } from "react";
 import { Combobox, Transition } from "@headlessui/react";
 import { CheckIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
+
+
+//TODO - Data from database Hotel Model
 const people = [
-  { id: 1, name: "New York" },
-  { id: 2, name: "Washington" },
-  { id: 3, name: "Chicago" },
-  { id: 4, name: "Los Angelos" },
-  { id: 6, name: "Oklahoma" },
+  { id: 1, name: "Grace Courts" },
+  { id: 2, name: "Shiloh Apartments" },
+  { id: 3, name: "Redemption Resort" },
+  { id: 4, name: "Joy to the Wise" },
+  { id: 6, name: "1000 chalets" },
 ];
+
+
 
 const LocationEntry: React.FC<{ placeholder: string }> = ({ placeholder }) => {
   const [selected, setSelected] = useState({});
@@ -47,7 +52,7 @@ const LocationEntry: React.FC<{ placeholder: string }> = ({ placeholder }) => {
           <Combobox.Options className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
             {filteredPeople.length === 0 && query !== "" ? (
               <div className="relative cursor-default select-none py-2 px-4 text-gray-700">
-                Nothing found.
+                Nothing accomodation Found.
               </div>
             ) : (
               filteredPeople.map((person) => (

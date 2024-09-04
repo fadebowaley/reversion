@@ -15,8 +15,7 @@ const error = async () => {
               <Image src={errorImg} alt="image" className="mx-auto w-full" />
               <h2 className="mt-10 mb-5 h2"> Oops! Page Not Found </h2>
               <p className="mb-8">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                The page you are looking for has been moved to another place, kindly check other place
               </p>
               <Link href="/" className="btn-primary font-semibold">
                 <span className="inline-block"> Back To Home </span>

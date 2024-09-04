@@ -29,7 +29,7 @@ const HeaderTop = () => {
             <div className="flex-col hidden lg:flex">
               <span className="text-xs">Free Call</span>
               <Link href="tel:4065550120" className="text-base">
-                (406) 555-0120
+                (234)81450 45108
               </Link>
             </div>
           </div>
@@ -38,8 +38,10 @@ const HeaderTop = () => {
             <i className="las la-envelope-open bg-[var(--secondary)] text-[var(--neutral-700)] text-2xl p-2 rounded-full"></i>
             <div className="flex-col hidden lg:flex">
               <span className="text-xs">Online Support</span>
-              <Link href="mailto:debra.holt@example.com" className="text-base">
-                debra.holt@example.com
+              <Link
+                href="mailto:hello@rccghospitality.com"
+                className="text-base">
+                hello@rccghospitality.com
               </Link>
             </div>
           </div>
@@ -48,12 +50,12 @@ const HeaderTop = () => {
             <i className="las la-map-marker-alt bg-[var(--tertiary)] text-[var(--neutral-700)] text-2xl p-2 rounded-full"></i>
             <div className="flex-col hidden lg:flex">
               <span className="text-xs">Our Location</span>
-              <span className="text-base">3605 Parker Rd.</span>
+              <span className="text-base">Km 46 Lagos Ibadan Expressway.</span>
             </div>
           </div>
         </div>
-        <Link href="/add-property" className="btn-primary-lg hidden md:block">
-          Submit Property
+        <Link href="/sign-in" className="btn-primary-lg hidden md:block">
+          Login/Register
         </Link>
       </div>
     </div>

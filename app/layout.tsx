@@ -5,8 +5,8 @@ import "@/public/styles/line-awesome.min.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Placewise - Online Booking NextJS Template",
-  description: "A nextjs template for online booking system",
+  title: "RCCG Hospitality is an Hotel Booking app for Hospitality",
+  description: "Design for accomodations booking within RCCG Community",
 };
 
 export default function RootLayout({
