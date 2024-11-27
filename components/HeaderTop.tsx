@@ -29,7 +29,7 @@ const HeaderTop = () => {
             <div className="flex-col hidden lg:flex">
               <span className="text-xs">Free Call</span>
               <Link href="tel:4065550120" className="text-base">
-                (234)81450 45108
+                (234)90122177495
               </Link>
             </div>
           </div>

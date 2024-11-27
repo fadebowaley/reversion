@@ -63,7 +63,7 @@ const Hero = () => {
             </h1>
             <p className="mb-10 text-xl">
               Welcome to CRM Hospitality, where you can easily find the perfect
-              stay for your next trip and even more!
+              stay for your next short stay and even more!
             </p>
           </div>
         </div>

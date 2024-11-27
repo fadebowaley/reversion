@@ -5,13 +5,33 @@ import { CheckIcon, MapPinIcon } from "@heroicons/react/24/outline";
 
 
 //TODO - Data from database Hotel Model
-const people = [
-  { id: 1, name: "Grace Courts" },
-  { id: 2, name: "Shiloh Apartments" },
-  { id: 3, name: "Redemption Resort" },
-  { id: 4, name: "Joy to the Wise" },
-  { id: 6, name: "1000 chalets" },
+const accomodations = [
+  { id: 1, name: "All Accommodations" },
+  { id: 2, name: "Grace Courts" },
+  { id: 3, name: "Shiloh Apartments" },
+  { id: 4, name: "Redemption Resort" },
+  { id: 5, name: "Joy to the Wise" },
+  { id: 6, name: "1000 Chalets" },
+  { id: 7, name: "Gethsemane Apartment" },
+  { id: 8, name: "Wave of Glory Apartment" },
+  { id: 9, name: "Shepherd's Place" },
+  { id: 10, name: "Jordan Executive Chalets" },
+  { id: 11, name: "International Guest House" },
+  { id: 12, name: "Overflow Executive Chalets (Annex)" },
+  { id: 13, name: "White House Suites" },
+  { id: 14, name: "Dove Executive Chalets" },
+  { id: 15, name: "Moses Apartment" },
+  { id: 16, name: "The Overflow Executive Chalets (Main)" },
+  { id: 17, name: "2000 Chalets" },
+  { id: 18, name: "Regional Executive Chalets" },
+  { id: 19, name: "RCCG Missionary Court" },
+  { id: 20, name: "RCCG Jubilee Chalets" },
+  { id: 21, name: "The All Sufficient God's Chalets" },
+  { id: 22, name: "International Guest Suites" },
+  { id: 23, name: "RCCG Healthy Foods Guest House" },
+  { id: 24, name: "RCCG Hospitality" },
 ];
+;
 
 
 
@@ -19,11 +39,11 @@ const LocationEntry: React.FC<{ placeholder: string }> = ({ placeholder }) => {
   const [selected, setSelected] = useState({});
   const [query, setQuery] = useState("");
 
-  const filteredPeople =
+  const filteredaccomodations =
     query === ""
-      ? people
-      : people.filter((person) =>
-          person.name
+      ? accomodations
+      : accomodations.filter((accomodation) =>
+          accomodation.name
             .toLowerCase()
             .replace(/\s+/g, "")
             .includes(query.toLowerCase().replace(/\s+/g, ""))
@@ -35,7 +55,7 @@ const LocationEntry: React.FC<{ placeholder: string }> = ({ placeholder }) => {
         <div className="relative w-full cursor-pointer overflow-hidden rounded-full sm:text-sm bg-[var(--bg-1)] border focus:outline-none">
           <Combobox.Input
             className="w-full bg-[var(--bg-1)] border-none py-3 pl-3 md:pl-4 text-sm leading-5 text-gray-900 focus:outline-none"
-            displayValue={(person: any) => person.name}
+            displayValue={(accomodation: any) => accomodation.name}
             onChange={(event) => setQuery(event.target.value)}
             placeholder={placeholder}
           />
@@ -50,27 +70,27 @@ const LocationEntry: React.FC<{ placeholder: string }> = ({ placeholder }) => {
           leaveTo="opacity-0"
           afterLeave={() => setQuery("")}>
           <Combobox.Options className="absolute z-50 mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm">
-            {filteredPeople.length === 0 && query !== "" ? (
+            {filteredaccomodations.length === 0 && query !== "" ? (
               <div className="relative cursor-default select-none py-2 px-4 text-gray-700">
                 Nothing accomodation Found.
               </div>
             ) : (
-              filteredPeople.map((person) => (
+              filteredaccomodations.map((accomodation) => (
                 <Combobox.Option
-                  key={person.id}
+                  key={accomodation.id}
                   className={({ active }) =>
                     `relative cursor-default select-none py-3 pl-10 pr-4 ${
                       active ? "bg-gray-200 text-gray-900" : "text-gray-900"
                     }`
                   }
-                  value={person}>
+                  value={accomodation}>
                   {({ selected, active }) => (
                     <>
                       <span
                         className={`block truncate ${
                           selected ? "font-medium" : "font-normal"
                         }`}>
-                        {person.name}
+                        {accomodation.name}
                       </span>
                       {selected ? (
                         <span

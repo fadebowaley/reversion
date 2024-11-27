@@ -10,12 +10,17 @@ const Footer = () => {
           <div className="grid grid-cols-12 gap-6 text-white px-3 xl:px-0">
             <div className="col-span-12 md:col-span-6 xl:col-span-3">
               <Link href="/" className="inline-block mb-6">
-                <Image src={logolight} alt="image" className="" />
+                <Image
+                  src={logolight}
+                  alt="image"
+                  className=""
+                  style={{ width: "80%", height: "auto" }}
+                />
               </Link>
               <p className="clr-neutral-30 mb-6">
-                Real estate can be bought, sold, leased, or rented, and can be a
-                valuable investment opportunity. The value of real estate can
-                be...
+                CRM Hospitality is committed to providing exceptional service
+                and a seamless booking process. Discover your ideal stay with us
+                today.
               </p>
               <ul className="flex gap-3 flex-wrap">
                 <li>
@@ -101,8 +106,10 @@ const Footer = () => {
                 <li>
                   <div className="flex items-center gap-4">
                     <i className="las la-phone-volume bg-primary text-white text-xl p-2 rounded-full"></i>
-                    <Link href="tel:3165550116" className="mb-0 clr-neutral-30">
-                      (316) 555-0116
+                    <Link
+                      href="tel:23490122177495"
+                      className="mb-0 clr-neutral-30">
+                      (234)90122177495
                     </Link>
                   </div>
                 </li>
@@ -112,7 +119,7 @@ const Footer = () => {
                     <Link
                       href="mailto:example@mail.com"
                       className="mb-0 clr-neutral-30">
-                      example@mail.com
+                      hello@rccghospitality.com
                     </Link>
                   </div>
                 </li>
@@ -120,7 +127,7 @@ const Footer = () => {
                   <div className="flex items-center gap-4">
                     <i className="las la-map-marker-alt bg-[var(--tertiary)] text-[var(--neutral-700)] text-xl p-2 rounded-full"></i>
                     <p className="mb-0 clr-neutral-30">
-                      31 Brandy Way, Sutton, SM2 6SE
+                      Km 46 Lagos Ibadan Expressway, Ogun
                     </p>
                   </div>
                 </li>
@@ -157,12 +164,16 @@ const Footer = () => {
                 <div className="col-span-12 lg:col-span-6">
                   <p className="m-0 text-center lg:text-start">
                     Copyright &copy; {new Date().getFullYear()}
-                    <span className="text-[var(--tertiary)]"> Placewise </span>.
-                    Designed By
+                    <span className="text-[var(--tertiary)]">
+                      {" "}
+                      RCCG Hospitality{" "}
+                    </span>
+                    .
+                    {/* Designed By
                     <Link href="#" className="text-[var(--secondary)]">
                       {" "}
                       Pixelaxis
-                    </Link>
+                    </Link> */}
                   </p>
                 </div>
                 <div className="col-span-12 lg:col-span-6">
